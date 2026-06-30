@@ -27,14 +27,3 @@ function App() {
 }
 
 export default App;
-
-function App() {
-    return (
-        <div>
-            <Navbar />
-            <Home />
-        </div>
-    );
-}
-
-export default App;
