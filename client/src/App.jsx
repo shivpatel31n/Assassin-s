@@ -3,27 +3,36 @@ import Home from "./pages/Home";
 import TournamentCard from "./components/TournamentCard";
 
 function App() {
-    return (
+  const tournaments = [
+    {
+      id: 1,
+      title: "Valorant Cup",
+      game: "Valorant",
+      prizePool: "₹10,000",
+    },
+    {
+      id: 2,
+      title: "BGMI Championship",
+      game: "BGMI",
+      prizePool: "₹5,000",
+    },
+  ];
+
+  return (
     <>
-        <div>
-            <Navbar />
-            <Home />
-        </div>
-        <h1>Assassin-s Esports</h1>
+      <Navbar />
+      <Home />
 
+      {tournaments.map((tournament) => (
         <TournamentCard
-        title="Assassin-s Valorant Cup"
-        game="Valorant"
-        prizePool="₹10,000"
+          key={tournament.id}
+          title={tournament.title}
+          game={tournament.game}
+          prizePool={tournament.prizePool}
         />
-
-        <TournamentCard
-        title="BGMI Championship"
-        game="BGMI"
-        prizePool="₹5,000"
-        />
+      ))}
     </>
-    );
+  );
 }
 
 export default App;

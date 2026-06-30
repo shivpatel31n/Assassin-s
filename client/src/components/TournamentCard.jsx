@@ -4,6 +4,10 @@ function TournamentCard({ title, game, prizePool }) {
       <h2>{title}</h2>
       <p>{game}</p>
       <p>{prizePool}</p>
+
+      <button onClick={() => alert("Registration Coming Soon!")}>
+        Register
+      </button>
     </div>
   );
 }
