@@ -1,13 +1,13 @@
-function TournamentCard({ title, game, prizePool }) {
+function TournamentCard({ title, game, prizePool, discordLink }) {
   return (
     <div>
       <h2>{title}</h2>
       <p>{game}</p>
       <p>{prizePool}</p>
 
-      <button onClick={() => alert("Registration Coming Soon!")}>
-        Register
-      </button>
+      <a href="https://discord.gg/7RCDt277Y" target="_blank" rel="noopener noreferrer">
+        <button>Join Discord to Register</button>
+      </a>
     </div>
   );
 }

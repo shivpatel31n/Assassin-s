@@ -9,12 +9,14 @@ function App() {
       title: "Valorant Cup",
       game: "Valorant",
       prizePool: "₹10,000",
+      discordLink: "https://discord.gg/7RCDt277Y",
     },
     {
       id: 2,
       title: "BGMI Championship",
       game: "BGMI",
       prizePool: "₹5,000",
+      discordLink: "https://discord.gg/7RCDt277Y",
     },
   ];
 
@@ -29,6 +31,7 @@ function App() {
           title={tournament.title}
           game={tournament.game}
           prizePool={tournament.prizePool}
+          discordLink={tournament.discordLink}
         />
       ))}
     </>
